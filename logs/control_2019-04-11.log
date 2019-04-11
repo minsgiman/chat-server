@@ -1,0 +1,160 @@
+[19:51:38.831 DEBUG]init server
+[19:51:50.702 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"enter_leave_room_tester"}]
+[19:51:50.704 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[19:51:50.707 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"enter_leave_room"}]
+[19:51:50.709 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":0,"name":"enter_leave_room"}})
+[19:51:50.710 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":0}]
+[19:51:50.712 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"enter_leave_room_tester","contentType":"noti","content":"enter_leave_room_tester님이 입장하였습니다."})
+[19:51:50.712 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"enter_leave_room","roomId":0})
+[19:51:50.714 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[19:51:50.715 DEBUG]after leave : {}
+[19:51:50.716 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
+[19:51:50.728 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"login_tester"}]
+[19:51:50.728 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[19:51:50.738 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"login_tester"}]
+[19:51:50.739 DEBUG]send to socket message - event(login), message({"type":"res","code":-1})
+[19:51:50.752 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"chat_message_send_tester"}]
+[19:51:50.752 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[19:51:50.754 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"chat_message_send_room"}]
+[19:51:50.754 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":1,"name":"chat_message_send_room"}})
+[19:51:50.755 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":1}]
+[19:51:50.756 DEBUG]publish to socket message - roomId(1), event(chatMessage), message({"type":"push","sender":"chat_message_send_tester","contentType":"noti","content":"chat_message_send_tester님이 입장하였습니다."})
+[19:51:50.756 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"chat_message_send_room","roomId":1})
+[19:51:50.757 DEBUG]sioRawMessage.data : ["chatMessage",{"type":"req","content":{"type":"text","data":"hellow"}}]
+[19:51:50.759 DEBUG]publish to socket message - roomId(1), event(chatMessage), message({"type":"push","sender":"chat_message_send_tester","contentType":"text","content":"hellow"})
+[19:51:50.759 DEBUG]send to socket message - event(chatMessage), message({"type":"res","code":1})
+[19:51:50.760 DEBUG]after leave : {}
+[19:51:50.767 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"create_room_tester"}]
+[19:51:50.767 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[19:51:50.768 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"create_room"}]
+[19:51:50.769 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":2,"name":"create_room"}})
+[19:51:50.770 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[19:51:50.773 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"create_room","roomId":2}]})
+[20:05:19.366 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"sadsa"}]
+[20:05:19.367 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:05:19.389 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:05:19.389 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"create_room","roomId":2}]})
+[20:05:22.607 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":2}]
+[20:05:22.607 DEBUG]publish to socket message - roomId(2), event(chatMessage), message({"type":"push","sender":"sadsa","contentType":"noti","content":"sadsa님이 입장하였습니다."})
+[20:05:22.608 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"create_room","roomId":2})
+[20:05:24.777 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[20:05:24.777 DEBUG]after leave : {}
+[20:05:24.778 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
+[20:05:24.780 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:05:24.780 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[]})
+[20:05:26.810 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:05:26.810 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[]})
+[20:05:49.377 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"chat_message_send_tester"}]
+[20:05:49.377 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:05:49.379 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"chat_message_send_room"}]
+[20:05:49.379 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":3,"name":"chat_message_send_room"}})
+[20:05:49.380 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":3}]
+[20:05:49.380 DEBUG]publish to socket message - roomId(3), event(chatMessage), message({"type":"push","sender":"chat_message_send_tester","contentType":"noti","content":"chat_message_send_tester님이 입장하였습니다."})
+[20:05:49.381 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"chat_message_send_room","roomId":3})
+[20:05:49.382 DEBUG]sioRawMessage.data : ["chatMessage",{"type":"req","content":{"type":"text","data":"hellow"}}]
+[20:05:49.382 DEBUG]publish to socket message - roomId(3), event(chatMessage), message({"type":"push","sender":"chat_message_send_tester","contentType":"text","content":"hellow"})
+[20:05:49.383 DEBUG]send to socket message - event(chatMessage), message({"type":"res","code":1})
+[20:05:49.385 DEBUG]after leave : {}
+[20:05:49.921 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"login_tester"}]
+[20:05:49.922 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:05:49.933 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"login_tester"}]
+[20:05:49.933 DEBUG]send to socket message - event(login), message({"type":"res","code":-1})
+[20:05:49.944 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"enter_leave_room_tester"}]
+[20:05:49.944 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:05:49.946 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"enter_leave_room"}]
+[20:05:49.946 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":4,"name":"enter_leave_room"}})
+[20:05:49.947 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":4}]
+[20:05:49.947 DEBUG]publish to socket message - roomId(4), event(chatMessage), message({"type":"push","sender":"enter_leave_room_tester","contentType":"noti","content":"enter_leave_room_tester님이 입장하였습니다."})
+[20:05:49.947 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"enter_leave_room","roomId":4})
+[20:05:49.949 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[20:05:49.949 DEBUG]after leave : {}
+[20:05:49.949 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
+[20:05:49.955 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"create_room_tester"}]
+[20:05:49.955 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:05:49.957 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"create_room"}]
+[20:05:49.957 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":5,"name":"create_room"}})
+[20:05:49.958 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:05:49.958 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"create_room","roomId":5}]})
+[20:07:58.590 DEBUG]init server
+[20:08:06.890 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"asdas"}]
+[20:08:06.892 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:08:06.897 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:08:06.901 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[]})
+[20:08:09.604 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"sdsa"}]
+[20:08:09.605 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":0,"name":"sdsa"}})
+[20:08:09.606 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":0}]
+[20:08:09.607 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"asdas","contentType":"noti","content":"asdas님이 입장하였습니다."})
+[20:08:09.608 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"sdsa","roomId":0})
+[20:08:17.286 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"aaa"}]
+[20:08:17.287 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:08:17.291 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:08:17.291 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"sdsa","roomId":0}]})
+[20:08:22.926 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"qw"}]
+[20:08:22.926 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":1,"name":"qw"}})
+[20:08:22.928 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":1}]
+[20:08:22.928 DEBUG]publish to socket message - roomId(1), event(chatMessage), message({"type":"push","sender":"aaa","contentType":"noti","content":"aaa님이 입장하였습니다."})
+[20:08:22.928 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"qw","roomId":1})
+[20:08:25.895 DEBUG]sioRawMessage.data : ["invite",{"type":"req","from":"asdas","to":"aaa","roomId":0}]
+[20:08:25.897 DEBUG]send to socket message - event(invite), message({"type":"push","from":"asdas","name":"sdsa","roomId":0})
+[20:08:25.898 DEBUG]send to socket message - event(invite), message({"type":"res","code":1,"to":"aaa"})
+[20:08:33.744 DEBUG]sioRawMessage.data : ["inviteAccept",{"type":"req","roomId":0}]
+[20:08:33.747 DEBUG]after leave : {}
+[20:08:33.747 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"aaa","contentType":"noti","content":"aaa님이 입장하였습니다."})
+[20:08:33.749 DEBUG]send to socket message - event(inviteAccept), message({"type":"res","code":1,"name":"sdsa","roomId":0})
+[20:08:34.929 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[20:08:34.930 DEBUG]after leave : {"asdas":{"_userId":"asdas","_socketId":"jd36wd7wo_lzCdZqAAAA","_enterRoomId":0}}
+[20:08:34.931 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"aaa","contentType":"noti","content":"aaa님이 나갔습니다."})
+[20:08:34.931 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
+[20:08:34.936 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:08:34.937 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"sdsa","roomId":0}]})
+[20:08:35.744 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":0}]
+[20:08:35.744 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"aaa","contentType":"noti","content":"aaa님이 입장하였습니다."})
+[20:08:35.745 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"sdsa","roomId":0})
+[20:08:36.849 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[20:08:36.850 DEBUG]after leave : {"asdas":{"_userId":"asdas","_socketId":"jd36wd7wo_lzCdZqAAAA","_enterRoomId":0}}
+[20:08:36.850 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"aaa","contentType":"noti","content":"aaa님이 나갔습니다."})
+[20:08:36.850 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
+[20:08:36.855 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:08:36.855 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"sdsa","roomId":0}]})
+[20:08:38.244 DEBUG]after leave : {"asdas":{"_userId":"asdas","_socketId":"jd36wd7wo_lzCdZqAAAA","_enterRoomId":0}}
+[20:08:38.244 DEBUG]publish to socket message - roomId(0), event(chatMessage), message({"type":"push","sender":"aaa","contentType":"noti","content":"aaa님이 나갔습니다."})
+[20:08:40.398 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[20:08:40.398 DEBUG]after leave : {}
+[20:08:40.399 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
+[20:08:40.401 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:08:40.402 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[]})
+[20:12:44.076 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"dasa"}]
+[20:12:44.076 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:12:44.084 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:12:44.084 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[]})
+[20:12:58.578 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"create_room_tester"}]
+[20:12:58.579 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:12:58.580 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"create_room"}]
+[20:12:58.581 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":2,"name":"create_room"}})
+[20:12:58.582 DEBUG]sioRawMessage.data : ["getRoomList",{"type":"req"}]
+[20:12:58.582 DEBUG]send to socket message - event(getRoomList), message({"type":"res","code":1,"rooms":[{"name":"create_room","roomId":2}]})
+[20:12:58.596 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"chat_message_send_tester"}]
+[20:12:58.597 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:12:58.601 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"chat_message_send_room"}]
+[20:12:58.601 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":3,"name":"chat_message_send_room"}})
+[20:12:58.603 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":3}]
+[20:12:58.603 DEBUG]publish to socket message - roomId(3), event(chatMessage), message({"type":"push","sender":"chat_message_send_tester","contentType":"noti","content":"chat_message_send_tester님이 입장하였습니다."})
+[20:12:58.604 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"chat_message_send_room","roomId":3})
+[20:12:58.606 DEBUG]sioRawMessage.data : ["chatMessage",{"type":"req","content":{"type":"text","data":"hellow"}}]
+[20:12:58.608 DEBUG]publish to socket message - roomId(3), event(chatMessage), message({"type":"push","sender":"chat_message_send_tester","contentType":"text","content":"hellow"})
+[20:12:58.608 DEBUG]send to socket message - event(chatMessage), message({"type":"res","code":1})
+[20:12:58.610 DEBUG]after leave : {}
+[20:12:58.616 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"login_tester"}]
+[20:12:58.616 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:12:58.629 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"login_tester"}]
+[20:12:58.630 DEBUG]send to socket message - event(login), message({"type":"res","code":-1})
+[20:12:58.641 DEBUG]sioRawMessage.data : ["login",{"type":"req","userId":"enter_leave_room_tester"}]
+[20:12:58.642 DEBUG]send to socket message - event(login), message({"type":"res","code":1})
+[20:12:58.643 DEBUG]sioRawMessage.data : ["createRoom",{"type":"req","name":"enter_leave_room"}]
+[20:12:58.643 DEBUG]send to socket message - event(createRoom), message({"type":"res","code":1,"room":{"roomId":4,"name":"enter_leave_room"}})
+[20:12:58.644 DEBUG]sioRawMessage.data : ["enterRoom",{"type":"req","roomId":4}]
+[20:12:58.645 DEBUG]publish to socket message - roomId(4), event(chatMessage), message({"type":"push","sender":"enter_leave_room_tester","contentType":"noti","content":"enter_leave_room_tester님이 입장하였습니다."})
+[20:12:58.645 DEBUG]send to socket message - event(enterRoom), message({"type":"res","code":1,"name":"enter_leave_room","roomId":4})
+[20:12:58.646 DEBUG]sioRawMessage.data : ["leaveRoom",{"type":"req"}]
+[20:12:58.646 DEBUG]after leave : {}
+[20:12:58.647 DEBUG]send to socket message - event(leaveRoom), message({"type":"res","code":1})
